@@ -1,0 +1,16 @@
+<h1>COUCOU</h1>
+
+<tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.title %></td>
+        <td><%= event.description %></td>
+       <p> 
+        <td><a href="<%=  %>" class="btn btn-primary">Voir la suite</a></td>
+        <td><a href="<%=  %>" class="btn btn-secondary">Editer</a></td>
+        <td><a href="<%=  %>" class="btn btn-danger" data-confirm="t'es sûr de toi bro ?" data-method="DELETE">Supprimer</a></td>
+      </p>
+      </tr></br></br>
+    <% end %>
+</tbody>
+<p><a href="<%=  %>" class="btn btn-success">Créer</a></p>
